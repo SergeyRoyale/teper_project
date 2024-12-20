@@ -1,0 +1,79 @@
+:root {
+  /* Глобальные стили для шрифтов и цветовой схемы */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Основной шрифт */
+  line-height: 1.5; /* Высота строки */
+  font-weight: 400; /* Толщина шрифта */
+
+  color-scheme: light dark; /* Поддержка светлой и темной темы */
+  color: rgba(255, 255, 255, 0.87); /* Основной цвет текста */
+  background-color: #242424; /* Основной цвет фона */
+
+  font-synthesis: none; /* Отключение синтеза шрифтов */
+  text-rendering: optimizeLegibility; /* Улучшенное сглаживание текста */
+  -webkit-font-smoothing: antialiased; /* Сглаживание шрифтов для WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Сглаживание шрифтов для macOS */
+}
+
+a {
+  /* Стили для ссылок */
+  font-weight: 500; /* Толщина шрифта */
+  color: #646cff; /* Основной цвет ссылок */
+  text-decoration: inherit; /* Наследуем стиль подчеркивания */
+}
+a:hover {
+  /* Стили при наведении на ссылки */
+  color: #535bf2; /* Цвет ссылок при наведении */
+}
+
+body {
+  /* Основные стили для тела документа */
+  margin: 0; /* Убираем отступы */
+  display: flex; /* Используем флекс для выравнивания содержимого */
+  place-items: center; /* Центрируем элементы по горизонтали и вертикали */
+  min-width: 320px; /* Минимальная ширина экрана */
+  min-height: 100vh; /* Минимальная высота экрана */
+}
+
+h1 {
+  /* Стили для заголовков h1 */
+  font-size: 3.2em; /* Размер шрифта */
+  line-height: 1.1; /* Высота строки */
+}
+
+button {
+  /* Стили для кнопок */
+  border-radius: 8px; /* Скругленные углы */
+  border: 1px solid transparent; /* Прозрачная граница */
+  padding: 0.6em 1.2em; /* Внутренние отступы */
+  font-size: 1em; /* Размер шрифта */
+  font-weight: 500; /* Толщина шрифта */
+  font-family: inherit; /* Наследуем шрифт от родителя */
+  background-color: #1a1a1a; /* Цвет фона кнопки */
+  cursor: pointer; /* Указываем, что элемент кликабельный */
+  transition: border-color 0.25s; /* Плавный переход изменения цвета границы */
+}
+button:hover {
+  /* Стили при наведении на кнопку */
+  border-color: #646cff; /* Цвет границы при наведении */
+}
+button:focus,
+button:focus-visible {
+  /* Стили для кнопок в фокусе */
+  outline: 4px auto -webkit-focus-ring-color; /* Обводка для выделенных элементов */
+}
+
+@media (prefers-color-scheme: light) {
+  /* Стили для светлой темы */
+  :root {
+    color: #213547; /* Цвет текста */
+    background-color: #ffffff; /* Цвет фона */
+  }
+  a:hover {
+    /* Стили для ссылок при наведении */
+    color: #747bff; /* Цвет ссылок */
+  }
+  button {
+    /* Стили для кнопок в светлой теме */
+    background-color: #f9f9f9; /* Цвет фона кнопки */
+  }
+}
